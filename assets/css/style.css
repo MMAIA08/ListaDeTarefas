@@ -1,0 +1,131 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --verdePrincipal: #034018;
+    --verdeSecundario:#01260A;
+    --douradoPrincipal: #F2B035;
+    --douradoSecundario:#A6610D;
+    --morron:#733906;
+  
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/um-soldado-a-beira-de-um-penhasco_1268-25036.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top center ;
+    background-attachment: fixed;
+    
+    
+}
+header{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+.area-navegação-principal{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #01260adf;
+    box-shadow:inset 0px 0px 20px 10px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.material-symbols-outlined {
+    color: var(--douradoPrincipal);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.area-navegação-principal h1{
+    text-decoration: none;
+    color: var(--douradoPrincipal);
+}
+
+.area-navegação-secundaria{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    overflow: auto;
+    box-sizing: border-box;
+
+    
+}
+
+.area-navegação-secundaria img{
+    width: 100%;
+    height: 74%;
+    margin: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.main{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-tarefa{
+    height: 25px;
+    width: 75px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-tarefa:hover{
+    background-color: var(--douradoPrincipal);
+    color: white;
+    transition:5ms ;
+    transition-duration: 15;
+}
+
+.input-tarefa{
+    height: 25px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+}
+
+.tarefas{
+    margin-top: 30px;
+    
+    justify-content: start;
+}
+.tarefas li{
+    margin: 2px;
+    width: 300px;
+    margin-left: 20px;
+    padding: 3px;
+    font-size: 20px;
+    font-weight:300;
+    background-color: rgba(255, 255, 255, 0.43);    
+    border: 1px solid var(--douradoPrincipal);
+    border-radius: 5px;
+}
+
+.roda-pe{
+    background-color: black;
+    color: var(--douradoPrincipal);
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
