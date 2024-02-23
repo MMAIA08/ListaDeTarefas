@@ -83,28 +83,35 @@ header{
 }
 
 .btn-tarefa{
-    height: 25px;
-    width: 75px;
+    height: 40px;
+    width: 35px;
     border-radius: 5px;
     border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.415);
+
 }
 
 .btn-tarefa:hover{
     background-color: var(--douradoPrincipal);
     color: white;
-    transition:5ms ;
-    transition-duration: 15;
+    
 }
 
 .input-tarefa{
-    height: 25px;
-    width: 250px;
+    height: 40px;
+    width: 200px;
     border-radius: 8px;
-    border: none;
+    border: px solid var(--verdeSecundario);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.415);
+    outline: 0;
+}
+
+.input-tarefa:focus{
+    border-bottom:1px solid var(--douradoSecundario) ;
 }
 
 .tarefas{
-    margin-top: 30px;
+    margin-top: 50px;
     
     justify-content: start;
 }
@@ -116,7 +123,7 @@ header{
     font-size: 20px;
     font-weight:300;
     background-color: rgba(255, 255, 255, 0.43);    
-    border: 1px solid var(--douradoPrincipal);
+    border: 2px solid var(--verdeSecundario);
     border-radius: 5px;
 }
 
