@@ -55,77 +55,78 @@ header{
     color: var(--douradoPrincipal);
 }
 
-.area-navegação-secundaria{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    overflow: auto;
-    box-sizing: border-box;
-
-    
-}
-
-.area-navegação-secundaria img{
-    width: 100%;
-    height: 74%;
-    margin: 2px;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
 .main{
     width: 90%;
     margin: auto;
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn-tarefa{
-    height: 40px;
-    width: 35px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.415);
-
-}
-
-.btn-tarefa:hover{
-    background-color: var(--douradoPrincipal);
-    color: white;
     
 }
-
 .input-tarefa{
     height: 40px;
     width: 200px;
     border-radius: 8px;
     border: px solid var(--verdeSecundario);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.415);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.415);
     outline: 0;
 }
 
-.input-tarefa:focus{
-    border-bottom:1px solid var(--douradoSecundario) ;
+
+
+.btn-tarefa{
+    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.415);
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.btn-tarefa:hover{
+    background-color: var(--verdeSecundario);
+    color: var(--douradoPrincipal);
 }
 
 .tarefas{
-    margin-top: 50px;
-    
-    justify-content: start;
+    width: 90%;
+    margin-top: 20px;
 }
 .tarefas li{
-    margin: 2px;
-    width: 300px;
+    margin: 1px;
+    width: 100%;
     margin-left: 20px;
     padding: 3px;
     font-size: 20px;
-    font-weight:300;
-    background-color: rgba(255, 255, 255, 0.43);    
-    border: 2px solid var(--verdeSecundario);
+    border: 1px solid var(--verdeSecundario);
     border-radius: 5px;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.741);
+    list-style: none;
+    box-shadow: inset 1px 1px 5px ;
+    position: relative;
 }
+
+.apagar{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 4px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 5px;
+    color: var(--verdeSecundario);
+    background-color: white;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.apagar:hover{
+    color: white;
+    background-color: red;
+}
+
 
 .roda-pe{
     background-color: black;
