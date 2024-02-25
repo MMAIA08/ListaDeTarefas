@@ -96,6 +96,7 @@ header{
 .tarefas li{
     margin: 1px;
     width: 100%;
+    min-height: 50px;
     margin-left: 20px;
     padding: 3px;
     font-size: 20px;
@@ -126,6 +127,26 @@ header{
     color: white;
     background-color: red;
 }
+
+.concluir{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 4px;
+    position: absolute;
+    right: 70px;
+    bottom: 2px;
+    border-radius: 5px;
+    color: var(--verdeSecundario);
+    background-color: white;
+    font-weight: bolder;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.concluir:hover{
+    color: var(--douradoSecundario);
+    background-color: var(--verdeSecundario);
+}
+
 
 
 .roda-pe{
