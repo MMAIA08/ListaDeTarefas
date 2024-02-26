@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 :root{
     --verdePrincipal: #034018;
@@ -26,7 +26,7 @@ body{
 }
 header{
     width: 100%;
-    height: 15%;
+    height: 10%;
     background-color: rgba(255, 255, 255, 0.267);
 }
 .area-navegação-principal{
@@ -61,11 +61,14 @@ header{
     margin-top: 20px;
     
 }
-.input-tarefa{
+.formulario{
     height: 40px;
-    width: 200px;
+}
+.input-tarefa{
+    height: 100%;
+    width: 250px;
     border-radius: 8px;
-    border: px solid var(--verdeSecundario);
+    border: 2px solid var(--verdeSecundario);
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.415);
     outline: 0;
 }
@@ -73,9 +76,10 @@ header{
 
 
 .btn-tarefa{
+    margin-top: 5px;
     margin-left: 15px;
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width:60px;
     border-radius: 10px;
     border: none;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.415);
@@ -90,11 +94,11 @@ header{
 }
 
 .tarefas{
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
 }
 .tarefas li{
-    margin: 1px;
+    margin: 2px;
     width: 100%;
     min-height: 50px;
     margin-left: 20px;
@@ -105,7 +109,7 @@ header{
     word-wrap: break-word;
     background-color: rgba(255, 255, 255, 0.741);
     list-style: none;
-    box-shadow: inset 1px 1px 5px ;
+    box-shadow:  1px 1px 5px 1px;
     position: relative;
 }
 
