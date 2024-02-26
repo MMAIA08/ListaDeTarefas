@@ -82,11 +82,14 @@ document.addEventListener ("click", function(e){
                 title: "Deletado!",
                 text: "Sua tarefa foi deletada.",
                 icon: "success"
-                
               });
+              el.parentElement.remove();
+            } else{
+                return
             }
           });
-        el.parentElement.remove();
+       
+    
         salvarTarefas();
     }
 });
@@ -102,7 +105,7 @@ function salvarTarefas(){
 
    for (let tarefa of liTarefas){
     let tarefaTexto = tarefa.innerText;
-    tarefaTexto = tarefaTexto.replace('APAGAR', '').trim();
+    tarefaTexto = tarefaTexto.replace('APAGAR', 'CONCLUIR').trim();
     listaDeTarefas.push(tarefaTexto);
    }
 
